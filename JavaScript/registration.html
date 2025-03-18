@@ -13,17 +13,19 @@
         Education Details: 10th Std(School, Education Board, Percentage, Year of Completion)
                            12th Std / PUC / Diploma(College, Education Board, Percentage, Year of Completion)
         Admission Details: Branch, Admission Quota, Fees, Facilities(Canteen, Hostel, Bus, Library, Sports Club), Photo -->
-        <form>
+        <form id="registration_form" onsubmit="return validateForm(event)">
             <h1 class="display-5 text-center bg-secondary p-2 mt-2 text-light">Basic Details</h1>
             <div class="mb-3">
               <label for="student_name" class="form-label">Student Name</label>
               <input type="text" class="form-control" id="student_name" placeholder="Enter your name">
+              <div class="name_error text-danger"></div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="father_name" class="form-label">Father Name</label>
                   <input type="text" class="form-control" id="father_name" placeholder="Enter your father name">
+                  <div class="name_error text-danger"></div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -282,5 +284,7 @@
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+  
   </body>
 </html>
