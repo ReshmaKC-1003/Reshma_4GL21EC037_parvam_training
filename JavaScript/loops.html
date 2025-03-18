@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        // syntax: for(Initialization; Condition; Increment/Decrement)
+        for(var i=0; i<num; i++){
+            console.log("JavaScript");
+        }
+        // print first 10 whole numbers
+        for(var i=0; i<num; i++){
+            console.log(`${i}`);
+        }
+        // print first 10 natural numbers
+        for(var i=1; i<=num; i++){
+            console.log(`${i}`);
+        }
+        // print first 10 multiples of 2
+        for(var i=1; i<=num; i++){
+            console.log(`8 x ${i} = ${8*i}`);
+        }
+        // print first 10 odd numbers
+        var limit = 40;
+        for(var i=1; i<=limit; i++){
+            if(i%2 != 0){
+            console.log(`${i}`);
+        }
+    }
+        // print 1 to 10 tables
+        for(var i=1; i<=num; i++){
+           for(var j=1; j<=num; j++){
+            console.log(`${i} x ${j} = ${i * j}`);
+        }
+    }
+    
+
+        var i = 0;
+        while(i<=num){
+             console.log(`${i}`);
+             i+=1;  //<=> i = i+1 i+=1 i+=
+     }
+        // print first 10 even numbers using while loop
+        var i = 1,num = 20;
+         while(i<=num){
+            if(i%2 != 0){
+             console.log(`${i}`);
+            }
+            i++;
+        }
+        //  sum of first 10 natural numbers
+        var sum= 0,num = 1, limit=10;
+         while(num<=limit){
+          sum+=num;
+          num++;
+         }
+             console.log(`THe sum of first 10 numbers is:${sum}`);
+        
+             
+        // limit=5,sum=0, num=1
+        // step1: num=1, 1<=5 -T
+                //    sum=sum+num=>sum=0+1=1
+        //  step2: num=2, 2<=5 -T       
+                    // sum=1+2=3
+        //  step3: num=3, 3<=5 -T       
+                    // sum=3+3=6
+        //  step4: num=4, 4<=5 -T       
+                    // sum=6+4=10
+        //  step5: num=5, 5<=5 -T       
+                    // sum=10+5=15
+
+
+        // Reversing a number using while loop
+        var num = 30503, reverse = 0, digit = 0;
+        var isPalindrome=num;
+        console.log(`Original Number: ${num}`);
+        while(num > 0){
+            // digit = num % 10;
+            // reverse = reverse * 10 + digit;
+            reverse = reverse * 10 + num % 10;
+            num =Math.floor  (num / 10);
+        }   
+        console.log(`Reversed Number: ${reverse}`);
+        if(isPalindrome == reverse){ 
+            console.log(`${isPalindrome} is a Palindrome Number. Because ${isPalindrome} is equal to ${reverse}`);
+        } else{
+            console.log(`${isPalindrome} is not a Palindrome Number. Because ${isPalindrome} is not equal to ${reverse}`);  
+        }
+
+        
+        let n = 5;
+        for(let i = 1; i<=n; i++){
+            let str="*";
+            console.log(str.repeat(i));
+        }
+
+
+
+         
+
+
+
+
+    </script>
+</body>
+</html>

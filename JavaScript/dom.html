@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <h1 id="heading">Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet at quo eius ducimus repellat corrupti provident assumenda animi nihil facilis illum, dolores, dolor vitae, nemo quisquam unde! Quaerat necessitatibus esse illo omnis deleniti maiores repellat eveniet ad beatae eum, quia reiciendis modi officia nam, rerum a quis fugiat accusamus porro.</p> -->
+    <!-- <script>
+        // const heading = document.getElementById("heading");
+        // heading.innerHTML = "DOM Heading";
+        // console.log(heading);
+        // //  We can access complete HTML Document
+        // const doc = document;
+        // console.log(doc);
+        // // We can access complete body structure 
+        // const body = document.getElementsByTagName("body");
+        // console.log(body);
+    </script> -->
+    <script>
+        const root = document.getElementById("root");
+        const heading = document.createElement("h1");
+        const para = document.createElement("p");
+       
+
+        document.title = "DOM Document";
+
+        heading.innerHTML = "Hello World!";
+        heading.style.color = "red";
+        heading.style.backgroundColor = "yellow";
+        heading.style.textAlign = "center";
+        
+        para.innerHTML = "This is paragraph";
+
+        root.append(heading);
+        root.append(para);
+
+        console.log(root);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = 5;
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= i; j++) {      //second 'for loop' to print star
+            pattern += `${j}`;    //adding * to pattern string
+        }
+        pattern += "\n";    //new line after row completion
+    }
+    console.log(pattern);   //printing star to console
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern.";
+}
+
+</script>
+<script>
+    var Num=10, Second = 20;
+    //console.log(`The value of \`Num\` is ` +Num + ". The Second value is " + Second);
+    console.log(`The value of 'Num' is  ${Num}.  The "Second" value is ${Second}.`);
+    </script>
+
+</body>
+</html>
